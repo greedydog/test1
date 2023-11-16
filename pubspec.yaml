@@ -47,6 +47,10 @@ dependencies:
   palette_generator: ^0.3.3+3
   flutter_spinkit: ^5.2.0
   shared_preferences: ^2.2.2
+  audio_video_progress_bar: ^2.0.1
+  audio_service: ^0.18.12
+  just_audio: ^0.9.36
+  get_it: ^7.6.4
 
 dev_dependencies:
   flutter_test:

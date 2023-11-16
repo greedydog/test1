@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test_project/cubit/app_cubit_logics.dart';
 import 'package:flutter_test_project/cubit/app_cubits.dart';
@@ -6,11 +7,16 @@ import 'package:flutter_test_project/pages/music_list_artist_page/cubit/music_li
 import 'package:flutter_test_project/pages/music_list_page/cubit/music_list_page_info_cubits.dart';
 import 'package:flutter_test_project/services/data_services.dart';
 import 'package:flutter_test_project/widgets/global_keys.dart';
+import 'package:flutter_test_project/pages/music_play_page/services/service_locator.dart';
+
 
 void main() {
+   setupApp();
+}
+void setupApp() async {
+  await setupServiceLocator();
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
